@@ -18,7 +18,7 @@ def pregunta_01():
 
     # Cargue el dataset digits
     from sklearn.datasets import load_digits
-    digits = load_digits()
+    digits = datasets.load_digits(n_class=10, return_X_y=False)
 
     # Imprima los nombres de la variable target del dataset
     print(digits.target_names)
